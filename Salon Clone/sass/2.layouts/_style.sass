@@ -1,0 +1,29 @@
+#style
+  background: $gray-200
+  +background(none, perfect-style)
+  background-attachment: fixed
+  position: relative
+  height: 100vh
+  color: $white
+  .container
+    +center
+    width: 90%
+    .col-12
+      background: darken($primary, 5%)
+      border: 5px solid $gray-500
+      text-align: center
+      border-radius: 10px
+      padding: 2rem
+
+#c-style
+  background: $gray-200
+  overflow: hidden
+  .row *
+    padding: 0
+    overflow: hidden
+    +transition($fast-trans)
+    &:hover img
+      +transform(scale(1.3))
+
+    img
+      min-width: 100%

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+body
+  +font-family(sans-serif)
+  font-size: $base-font-size
+  line-height: 1.6
+  color: $gray-700
+
+a
+  text-decoration: none
+  text-transform: uppercase
+  +font-family(sans-serif)
+  +transition($fast-trans)
+

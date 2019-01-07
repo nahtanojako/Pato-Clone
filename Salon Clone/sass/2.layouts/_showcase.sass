@@ -1,0 +1,22 @@
+#showcase
+  +background(overlay, header-background-2)
+  position: relative
+  height: 100vh
+  color: white
+  text-align: center
+  .container
+    +center
+
+  .indicator
+    +center(x)
+    bottom: 3rem
+    .indicator-item
+      width: 2rem
+      height: 4px
+      background: $gray-500
+      display: inline-block
+      margin: 0 3px
+      cursor: pointer
+      +transition($fast-trans)
+    .active, .indicator-item:hover
+      background: $white
